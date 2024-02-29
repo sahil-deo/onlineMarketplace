@@ -1,6 +1,6 @@
 <?php
 try{
-    require_once "inc/database.php";
+    require_once "database.php";
 
     $query = "SELECT * FROM appdata WHERE Featured = 1;";
     $stmt = $pdo->prepare($query);
