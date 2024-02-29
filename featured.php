@@ -23,7 +23,7 @@
 
         <div class="container">
         <?php
-            require_once("inc/spawnFeatured.php");
+            require_once("spawnFeatured.php");
         ?>
         
         </div>
