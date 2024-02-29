@@ -1,6 +1,6 @@
 <?php
 try{
-    require_once "inc/database.php";
+    require_once "database.php";
     if(!$isconn){
         die();
     }
