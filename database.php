@@ -1,7 +1,7 @@
 <?php
-    $db_server = "mysql:host=localhost; dbname=general";
-    $db_user = "root";
-    $db_pass = "";
+    $db_server = "mysql:host=<yourHostName>; dbname=<yourDataBaseName>";
+    $db_user = "yourUsername";
+    $db_pass = "yourPassword";
 
 
     try{
