@@ -22,7 +22,7 @@
 
         <div class="container">
         <?php
-            require_once("inc/spawnApps.php");
+            require_once("spawnApps.php");
         ?>
         
         </div>
