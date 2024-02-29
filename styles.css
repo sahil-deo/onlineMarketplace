@@ -1,0 +1,123 @@
+body{
+    margin: 0px;
+    background-color: hsl(212, 32%, 30%);
+}
+#logo{
+    margin-bottom: -5px;
+    margin-right: 8px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #171d25;
+    padding: 15px 20vw;
+    color: #e5e5e5;
+}
+.headertitle{
+    margin: 10px;
+    font-size: 2.5em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+}
+.headeroptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+}
+.currentpage{
+    text-decoration: underline; 
+    text-decoration-thickness: 20%;  
+    text-underline-offset: 4px; 
+    color: hsl(227, 100%, 90%);
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.app{
+    margin: 20px;
+    justify-self: center;
+    background-color: aliceblue;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px black;
+
+}
+.appimg img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.appimg{
+    transition: .5s ease;
+
+}
+.appname{
+    position: absolute;
+    align-self: center;
+    justify-self: flex-end;
+    background-color: #171d25;
+    color:#e5e5e5;
+    padding: 10px 15px;
+    opacity: 0;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 2px black;
+
+}
+.app:hover .appname{
+    opacity: 1;
+    cursor: pointer;
+}
+.appname:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.app:hover .appimg{
+    filter: blur(10px) opacity(1);
+}
+a{
+    text-decoration: none;
+    color: #e5e5e5;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+.currentpage a{
+    color: hsl(227, 100%, 90%);
+}
+
+@media(min-width: 1000px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #171d25;
+        padding: 15px 20vw;
+        color: #e5e5e5;
+    }
+    .headertitle{
+        margin: 10px;
+        flex: 1;
+        font-size: 2.5em;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+    }
+    .headeroptions{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 1;
+        align-items: center;
+        font-family: "Quicksand", sans-serif;
+    }
+}
+main{
+    color: #e5e5e5;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+}
