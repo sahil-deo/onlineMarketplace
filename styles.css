@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     background-color: hsl(212, 32%, 30%);
+    background-image: url('background.png');
 }
 #logo{
     margin-bottom: -5px;
